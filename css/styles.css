@@ -797,6 +797,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   list-style: none;
   margin-bottom: 48px;
   padding: 0;
+  counter-reset: stepper-counter;
 }
 .stepper li {
   display: flex;
@@ -807,6 +808,19 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 16px 18px;
+  position: relative;
+  counter-increment: stepper-counter;
+}
+.stepper li::before {
+  content: counter(stepper-counter, decimal-leading-zero);
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: .7rem;
+  font-weight: 700;
+  color: var(--muted);
+  opacity: .45;
+  letter-spacing: .03em;
 }
 .stepper__icon {
   display: inline-flex;
