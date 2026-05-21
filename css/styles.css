@@ -3,18 +3,18 @@
    Light base · green/blue accents · campaign bracket language
    ============================================================ */
 
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdLight.otf") format("opentype"); font-weight: 300; font-style: normal; font-display: swap; }
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdLightItalic.otf") format("opentype"); font-weight: 300; font-style: italic; font-display: swap; }
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdRegular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdItalic.otf") format("opentype"); font-weight: 400; font-style: italic; font-display: swap; }
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdSemiBold.otf") format("opentype"); font-weight: 600; font-style: normal; font-display: swap; }
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdSemiBoldItalic.otf") format("opentype"); font-weight: 600; font-style: italic; font-display: swap; }
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdBold.otf") format("opentype"); font-weight: 700; font-style: normal; font-display: swap; }
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdBoldItalic.otf") format("opentype"); font-weight: 700; font-style: italic; font-display: swap; }
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdExtraBold.otf") format("opentype"); font-weight: 800; font-style: normal; font-display: swap; }
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdExtraBoldItalic.otf") format("opentype"); font-weight: 800; font-style: italic; font-display: swap; }
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdBlack.otf") format("opentype"); font-weight: 900; font-style: normal; font-display: swap; }
-@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdBlackItalic.otf") format("opentype"); font-weight: 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdLight.woff2") format("woff2"), url("../fonts/AvertaStdLight.woff") format("woff"), url("../fonts/AvertaStdLight.otf") format("opentype"); font-weight: 300; font-style: normal; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdLightItalic.woff2") format("woff2"), url("../fonts/AvertaStdLightItalic.woff") format("woff"), url("../fonts/AvertaStdLightItalic.otf") format("opentype"); font-weight: 300; font-style: italic; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdRegular.woff2") format("woff2"), url("../fonts/AvertaStdRegular.woff") format("woff"), url("../fonts/AvertaStdRegular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdItalic.woff2") format("woff2"), url("../fonts/AvertaStdItalic.woff") format("woff"), url("../fonts/AvertaStdItalic.otf") format("opentype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdSemiBold.woff2") format("woff2"), url("../fonts/AvertaStdSemiBold.woff") format("woff"), url("../fonts/AvertaStdSemiBold.otf") format("opentype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdSemiBoldItalic.woff2") format("woff2"), url("../fonts/AvertaStdSemiBoldItalic.woff") format("woff"), url("../fonts/AvertaStdSemiBoldItalic.otf") format("opentype"); font-weight: 600; font-style: italic; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdBold.woff2") format("woff2"), url("../fonts/AvertaStdBold.woff") format("woff"), url("../fonts/AvertaStdBold.otf") format("opentype"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdBoldItalic.woff2") format("woff2"), url("../fonts/AvertaStdBoldItalic.woff") format("woff"), url("../fonts/AvertaStdBoldItalic.otf") format("opentype"); font-weight: 700; font-style: italic; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdExtraBold.woff2") format("woff2"), url("../fonts/AvertaStdExtraBold.woff") format("woff"), url("../fonts/AvertaStdExtraBold.otf") format("opentype"); font-weight: 800; font-style: normal; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdExtraBoldItalic.woff2") format("woff2"), url("../fonts/AvertaStdExtraBoldItalic.woff") format("woff"), url("../fonts/AvertaStdExtraBoldItalic.otf") format("opentype"); font-weight: 800; font-style: italic; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdBlack.woff2") format("woff2"), url("../fonts/AvertaStdBlack.woff") format("woff"), url("../fonts/AvertaStdBlack.otf") format("opentype"); font-weight: 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Averta"; src: url("../fonts/AvertaStdBlackItalic.woff2") format("woff2"), url("../fonts/AvertaStdBlackItalic.woff") format("woff"), url("../fonts/AvertaStdBlackItalic.otf") format("opentype"); font-weight: 900; font-style: italic; font-display: swap; }
 
 :root {
   /* Base */
