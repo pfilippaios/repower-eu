@@ -907,6 +907,8 @@ body.menu-open::after {
 .acc-body {
   padding: 0 20px 20px 56px; /* 20px edge + 22px counter + 14px gap */
   color: var(--ink-2);
+  border-top: 1px solid var(--line);
+  padding-top: 16px;
 }
 .acc-body p { margin: 0 0 .8em; }
 .acc-body ul, .acc-body ol {
