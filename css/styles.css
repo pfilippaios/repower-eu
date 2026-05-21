@@ -793,14 +793,14 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   display: flex;
   align-items: center;
   gap: 14px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--ink);
 }
 .accordion summary::-webkit-details-marker { display: none; }
 .accordion summary::before {
   content: counter(faq-counter, decimal-leading-zero);
   font-size: .85rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--muted);
   min-width: 22px;
   flex-shrink: 0;
