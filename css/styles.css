@@ -65,7 +65,7 @@ body {
   font-size: 17px;
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
-  padding-bottom: var(--bar-h, 84px);
+  padding-bottom: calc(var(--bar-h, 84px) + env(safe-area-inset-bottom, 0px));
 }
 
 img { max-width: 100%; display: block; }
@@ -502,6 +502,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   color: #fff;
   box-shadow: 0 -10px 30px rgba(20,24,26,.18);
   border-top: 1px solid rgba(255,255,255,.06);
+  padding-bottom: env(safe-area-inset-bottom);
 }
 .action-bar__inner {
   display: flex;
