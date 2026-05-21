@@ -7,7 +7,13 @@
       toggle.setAttribute("aria-expanded", String(open));
       toggle.setAttribute("aria-label", open ? "Κλείσιμο μενού" : "Άνοιγμα μενού");
       mobileNav.hidden = !open;
+      document.body.classList.toggle("menu-open", open);
     };
+
+    document.addEventListener("click", e => {
+      if (mobileNav.hidden) return;
+      if (!mobileNav.contains(e.target) && !toggle.contains(e.target)) setMenuState(false);
+    });
 
     toggle.addEventListener("click", () => {
       const open = toggle.getAttribute("aria-expanded") === "true";
