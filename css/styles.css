@@ -860,19 +860,41 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 24px;
+  gap: 0;
   margin-top: 36px;
-  padding: 28px;
+  padding: 0;
   border-radius: var(--radius);
   background: var(--bg-alt);
   border: 1px solid var(--line);
   box-shadow: var(--shadow);
+  overflow: hidden;
 }
 .cta-block--green,
 .cta-block--blue { border-left: 1px solid var(--line); }
-.cta-block h3 { margin: 0 0 6px; font-weight: 800; }
-.cta-block p { margin: 0; max-width: 56ch; }
-.cta-block__buttons { display: flex; gap: 12px; flex-wrap: wrap; }
+.cta-block__content {
+  width: 100%;
+}
+.cta-block h3 {
+  margin: 0;
+  padding: 18px 20px;
+  background: linear-gradient(180deg, rgba(36,125,60,.12), rgba(36,125,60,.06));
+  border-bottom: 1px solid var(--line);
+  font-weight: 800;
+}
+.cta-block--blue h3 {
+  background: linear-gradient(180deg, rgba(15,79,181,.12), rgba(15,79,181,.06));
+}
+.cta-block p {
+  margin: 0;
+  max-width: 56ch;
+  padding: 18px 20px 0;
+}
+.cta-block__buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
 
 /* Exoikonomo two-column sticky layout */
 .exo-layout {
