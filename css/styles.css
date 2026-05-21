@@ -55,7 +55,7 @@
 *::before,
 *::after { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--bar-h, 84px) + 32px); }
 
 body {
   margin: 0;
