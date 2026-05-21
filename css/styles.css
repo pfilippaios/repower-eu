@@ -1260,21 +1260,25 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .programmes { padding: 28px 0 36px; }
   .programmes__grid { grid-template-columns: 1fr; }
 
-  .action-bar__inner { padding: 12px 16px; gap: 8px; flex-wrap: wrap; }
-  .action-bar__copy { width: 100%; margin-right: 0; }
-  .action-bar__copy strong { font-size: .95rem; }
-  .action-bar__copy span { font-size: .82rem; }
-  .action-bar__ctas {
-    width: 100%;
-    justify-content: flex-start;
-  }
+  .action-bar__inner { padding: 12px 16px; gap: 12px; flex-wrap: nowrap; align-items: center; }
+  .action-bar__copy { width: auto; margin-right: auto; }
+  .action-bar__copy strong { font-size: .88rem; }
+  .action-bar__copy span { display: none; }
+  .action-bar__ctas { flex-shrink: 0; width: auto; }
   .action-bar__ctas .btn {
-    flex: 0 1 auto;
-    min-inline-size: 0;
-    min-height: 42px;
-    padding: 10px 18px;
-    font-size: .86rem;
+    background: none;
+    border: none;
+    color: var(--green);
+    padding: 0;
+    min-width: 0;
+    font-size: .88rem;
+    font-weight: 700;
+    white-space: nowrap;
+    box-shadow: none;
+    text-decoration: underline;
+    text-underline-offset: 2px;
   }
+  .action-bar__ctas .btn:hover { background: none; color: var(--green-700); transform: none; }
   .back-to-top {
     width: 46px;
     height: 46px;
