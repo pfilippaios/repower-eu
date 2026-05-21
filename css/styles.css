@@ -1316,7 +1316,7 @@ body.menu-open::after {
   .cta-block__buttons .btn { flex: 1; }
 
   .accordion summary { padding: 14px 16px; gap: 10px; font-size: .95rem; }
-  .acc-body { padding: 0 16px 16px 48px; } /* 16px edge + 22px counter + 10px gap */
+  .acc-body { padding: 16px 16px 20px 48px; } /* 16px edge + 22px counter + 10px gap */
 
   .tabs {
     width: 100%;
