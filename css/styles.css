@@ -1260,25 +1260,18 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .programmes { padding: 28px 0 36px; }
   .programmes__grid { grid-template-columns: 1fr; }
 
-  .action-bar__inner { padding: 12px 16px; gap: 12px; flex-wrap: nowrap; align-items: center; }
-  .action-bar__copy { width: auto; margin-right: auto; }
+  .action-bar__inner { padding: 12px 16px; gap: 8px; flex-wrap: nowrap; align-items: center; }
+  .action-bar__copy { width: auto; margin-right: auto; min-width: 0; }
   .action-bar__copy strong { font-size: .88rem; }
   .action-bar__copy span { display: none; }
   .action-bar__ctas { flex-shrink: 0; width: auto; }
   .action-bar__ctas .btn {
-    background: none;
-    border: none;
-    color: var(--green);
-    padding: 0;
-    min-width: 0;
-    font-size: .88rem;
-    font-weight: 700;
+    flex: 0 1 auto;
+    min-inline-size: 0;
     white-space: nowrap;
-    box-shadow: none;
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    padding: 10px 14px;
+    font-size: .82rem;
   }
-  .action-bar__ctas .btn:hover { background: none; color: var(--green-700); transform: none; }
   .back-to-top {
     width: 46px;
     height: 46px;
