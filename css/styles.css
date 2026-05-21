@@ -336,7 +336,7 @@ body.menu-open::after {
 .hero {
   padding: clamp(40px, 7vw, 96px) 0 clamp(40px, 6vw, 80px);
   background:
-    url("../images/grid-hero.svg") center / cover no-repeat,
+    url("../images/bg-hero-grid.svg") center / cover no-repeat,
     radial-gradient(60% 80% at 85% 0%, rgba(45,168,79,.10), transparent 60%),
     radial-gradient(50% 60% at 0% 100%, rgba(15,79,181,.08), transparent 60%),
     var(--bg);
@@ -396,7 +396,7 @@ body.menu-open::after {
   justify-content: center;
 }
 .stamp img {
-  /* phr-white.webp — keep visible on dark */
+  /* logo-phr-light.webp — keep visible on dark */
   max-width: 80%;
   height: auto;
   filter: drop-shadow(0 1px 0 rgba(0,0,0,.2));
