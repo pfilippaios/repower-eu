@@ -169,6 +169,11 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   border-color: var(--green);
 }
 .btn--primary:hover { background: var(--green-700); border-color: var(--green-700); }
+@keyframes hero-pulse {
+  0%   { box-shadow: 0 14px 30px rgba(36,125,60,.24), 0 0 0 0 rgba(36,125,60,.45); }
+  70%  { box-shadow: 0 14px 30px rgba(36,125,60,.24), 0 0 0 14px rgba(36,125,60,0); }
+  100% { box-shadow: 0 14px 30px rgba(36,125,60,.24), 0 0 0 0 rgba(36,125,60,0); }
+}
 .btn--hero-primary {
   position: relative;
   background:
@@ -177,6 +182,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   border-color: transparent;
   box-shadow: 0 14px 30px rgba(36, 125, 60, .24);
   transform: translateY(-1px);
+  animation: hero-pulse 2s ease-out infinite;
 }
 .btn--hero-primary:hover {
   background:
@@ -185,6 +191,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   border-color: transparent;
   box-shadow: 0 18px 36px rgba(36, 125, 60, .30);
   transform: translateY(-3px);
+  animation-play-state: paused;
 }
 .btn--ghost {
   background: transparent;
@@ -591,6 +598,13 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .programme-section__head h2 {
   font-size: clamp(1.9rem, 3.6vw, 2.8rem);
   margin: 8px 0 12px;
+  text-wrap: balance;
+}
+.title-bracket {
+  color: var(--green);
+  font-weight: 300;
+  margin: 0 .15em;
+  opacity: .85;
 }
 
 .deadline-banner {
@@ -621,14 +635,24 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .deadline-banner__icon { display: none; }
 
 .subsection-title {
-  margin: 72px 0 24px;
-  padding-top: 18px;
+  margin: 48px 0 24px;
+  padding-top: 48px;
   font-size: 1.3rem;
   border-top: 1px solid rgba(20, 24, 26, .08);
 }
+.subsection-title::before {
+  content: '▶';
+  color: #38a169;
+  font-size: .75em;
+  margin-right: .45em;
+  vertical-align: middle;
+}
+.programme-section--blue .subsection-title::before {
+  color: #3182ce;
+}
 .programme-section__head + .deadline-banner + .subsection-title,
 .programme-section__head + .subsection-title {
-  margin-top: 56px;
+  margin-top: 48px;
 }
 
 /* Step grid */
@@ -636,6 +660,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   display: grid;
   grid-template-columns: repeat(4, minmax(0,1fr));
   gap: 16px;
+  margin-bottom: 48px;
 }
 .step-card {
   background: var(--bg-alt);
@@ -660,7 +685,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   display: grid;
   grid-template-columns: repeat(2, minmax(0,1fr));
   gap: 20px;
-  margin-bottom: 8px;
+  margin-bottom: 48px;
 }
 .deadline-grid--overview { grid-template-columns: repeat(2, minmax(0,1fr)); }
 .deadline-card {
@@ -770,6 +795,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   grid-template-columns: repeat(5, minmax(0,1fr));
   gap: 16px;
   list-style: none;
+  margin-bottom: 48px;
   padding: 0;
 }
 .stepper li {
@@ -809,7 +835,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 
 /* Accordion */
-.accordion { display: flex; flex-direction: column; gap: 10px; margin-bottom: 8px; counter-reset: faq-counter; }
+.accordion { display: flex; flex-direction: column; gap: 10px; margin-bottom: 48px; counter-reset: faq-counter; }
 .accordion details {
   background: var(--bg-alt);
   border: 1px solid var(--line);
@@ -1015,7 +1041,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
-  margin: 18px 0 22px;
+  margin: 18px 0 48px;
   padding: 6px;
   background: var(--bg-alt);
   border: 1px solid var(--line);
@@ -1261,7 +1287,6 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   .cta-block {
     flex-direction: column;
     align-items: flex-start;
-    padding: 22px;
   }
   .cta-block__buttons { width: 100%; }
   .cta-block__buttons .btn { flex: 1; }

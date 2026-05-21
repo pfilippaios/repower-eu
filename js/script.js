@@ -68,6 +68,14 @@
     });
   }
 
+  const heroBtn = document.querySelector('.btn--hero-primary');
+  if (heroBtn) {
+    const obs = new IntersectionObserver(([entry]) => {
+      heroBtn.style.animationPlayState = entry.isIntersecting ? 'running' : 'paused';
+    }, { threshold: 0.5 });
+    obs.observe(heroBtn);
+  }
+
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
