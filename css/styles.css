@@ -621,14 +621,14 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .deadline-banner__icon { display: none; }
 
 .subsection-title {
-  margin: 56px 0 22px;
-  padding-top: 10px;
+  margin: 72px 0 24px;
+  padding-top: 18px;
   font-size: 1.3rem;
   border-top: 1px solid rgba(20, 24, 26, .08);
 }
 .programme-section__head + .deadline-banner + .subsection-title,
 .programme-section__head + .subsection-title {
-  margin-top: 42px;
+  margin-top: 56px;
 }
 
 /* Step grid */
