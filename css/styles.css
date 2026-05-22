@@ -688,6 +688,22 @@ body.menu-open::after {
 .programme-section--blue .subsection-title::before {
   color: #3182ce;
 }
+.programme-section--blue .title-bracket {
+  color: var(--blue);
+}
+#allazo .btn--primary {
+  background: var(--blue);
+  border-color: var(--blue);
+  box-shadow: 0 8px 24px rgba(15,79,181,.22);
+  animation: none;
+}
+#allazo .btn--primary:hover {
+  background: var(--blue-700);
+  border-color: var(--blue-700);
+  box-shadow: 0 12px 30px rgba(15,79,181,.30);
+}
+#allazo .deadline-banner__date { color: var(--blue-700); }
+#allazo .deadline-card header strong { color: var(--blue-700); }
 .programme-section__head + .deadline-banner + .subsection-title,
 .programme-section__head + .subsection-title {
   margin-top: 48px;
