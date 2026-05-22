@@ -1025,6 +1025,9 @@ body.menu-open::after {
 .cta-block--blue h3 {
   background: var(--bg-soft);
 }
+.cta-block--blue .cta-block__countdown {
+  background: var(--blue);
+}
 .cta-block p {
   margin: 0;
   max-width: 56ch;
