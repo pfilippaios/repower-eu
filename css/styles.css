@@ -616,6 +616,9 @@ body.menu-open::after {
     radial-gradient(60% 50% at 100% 0%, rgba(200,69,30,.07), transparent 60%),
     var(--bg);
 }
+#promitheftes .programme-section__head {
+  max-width: none;
+}
 .programme-section__head {
   max-width: 78ch;
   margin-bottom: 28px;
