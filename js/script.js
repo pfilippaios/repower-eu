@@ -98,5 +98,11 @@
       status.textContent = " Η προθεσμία έχει παρέλθει.";
       item.appendChild(status);
     }
+
+    const daysEl = item.querySelector(".countdown__days");
+    if (daysEl) {
+      const diff = Math.ceil((deadline - today) / 864e5);
+      daysEl.textContent = diff > 0 ? diff : "0";
+    }
   });
 })();

@@ -1010,6 +1010,22 @@ body.menu-open::after {
   flex-wrap: wrap;
   padding: 20px;
 }
+.cta-block__countdown {
+  width: 100%;
+  border-top: 1px solid var(--line);
+  padding: 14px 20px;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  color: var(--muted);
+  font-size: .85rem;
+}
+.countdown__days {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1;
+}
 
 /* Exoikonomo two-column sticky layout */
 .exo-layout {
