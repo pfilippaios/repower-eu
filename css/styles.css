@@ -345,10 +345,20 @@ body.menu-open::after {
 .hero {
   padding: clamp(40px, 7vw, 96px) 0 clamp(40px, 6vw, 80px);
   background:
-    url("../images/bg-hero-grid.svg") center / cover no-repeat,
-    radial-gradient(60% 80% at 85% 0%, rgba(45,168,79,.10), transparent 60%),
-    radial-gradient(50% 60% at 0% 100%, rgba(15,79,181,.08), transparent 60%),
-    var(--bg);
+    url("../images/bg_blue_energy.png") center / cover no-repeat;
+}
+.hero .hero__title { color: #fff; }
+.hero .text-green { color: #6EE89A; }
+.hero .hero__lead { color: rgba(255,255,255,.88); }
+.hero .hero__lead strong { color: rgba(255,255,255,.88); }
+.hero .btn--ghost {
+  color: #fff;
+  border-color: rgba(255,255,255,.7);
+}
+.hero .btn--ghost:hover {
+  background: rgba(255,255,255,.15);
+  color: #fff;
+  border-color: #fff;
 }
 .hero__copy {
   display: flex;
