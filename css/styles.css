@@ -32,9 +32,9 @@
   --green:        #247D3C;          /* accessible REPOWER green */
   --green-700:    #1E6F35;
   --green-50:     #E8F5EC;
-  --blue:         #0F4FB5;          /* EU blue family */
-  --blue-700:     #0A3A89;
-  --blue-50:      #E6EEFA;
+  --blue:         #124f8a;          /* EU blue family */
+  --blue-700:     #0d3d6e;
+  --blue-50:      #ddeaf5;
   --brown:        #5B4A40;          /* YPEN brown */
   --warn:         #C8451E;
 
@@ -618,7 +618,7 @@ body.menu-open::after {
 }
 .programme-section--blue {
   background:
-    radial-gradient(60% 50% at 0% 0%, rgba(15,79,181,.08), transparent 60%),
+    radial-gradient(60% 50% at 0% 0%, rgba(18,79,138,.08), transparent 60%),
     linear-gradient(rgba(255,255,255,.91), rgba(255,255,255,.91)),
     url("../images/bg-allazw.webp") center / cover no-repeat;
 }
@@ -695,13 +695,13 @@ body.menu-open::after {
 #allazo .btn--primary {
   background: var(--blue);
   border-color: var(--blue);
-  box-shadow: 0 8px 24px rgba(15,79,181,.22);
+  box-shadow: 0 8px 24px rgba(18,79,138,.22);
   animation: none;
 }
 #allazo .btn--primary:hover {
   background: var(--blue-700);
   border-color: var(--blue-700);
-  box-shadow: 0 12px 30px rgba(15,79,181,.30);
+  box-shadow: 0 12px 30px rgba(18,79,138,.30);
 }
 #allazo .deadline-banner__date { color: var(--blue-700); }
 #allazo .deadline-card header strong { color: var(--blue-700); }
