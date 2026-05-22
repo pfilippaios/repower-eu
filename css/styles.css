@@ -1020,6 +1020,11 @@ body.menu-open::after {
   color: var(--muted);
   font-size: .85rem;
 }
+.deadline-card .cta-block__countdown {
+  margin: 0 -24px -24px;
+  padding: 14px 24px;
+  border-radius: 0 0 var(--radius) var(--radius);
+}
 .countdown__days {
   font-size: 1.6rem;
   font-weight: 800;
