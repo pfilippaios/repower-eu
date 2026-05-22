@@ -1137,6 +1137,7 @@ body.menu-open::after {
   color: #fff;
 }
 .reminder .btn--primary:hover { background: var(--green-700); border-color: var(--green-700); }
+.reminder .text-green { color: #6EE89A; }
 
 /* ----------------------------------------------------------
    FAQ tabs
