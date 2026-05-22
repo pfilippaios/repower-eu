@@ -1012,24 +1012,30 @@ body.menu-open::after {
 }
 .cta-block__countdown {
   width: 100%;
-  border-top: 1px solid var(--line);
-  padding: 14px 20px;
+  background: var(--green);
+  border-top: none;
+  padding: 16px 20px;
   display: flex;
   align-items: baseline;
-  gap: 6px;
-  color: var(--muted);
-  font-size: .85rem;
+  gap: 8px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
 }
 .deadline-card .cta-block__countdown {
   margin: 0 -24px -24px;
-  padding: 14px 24px;
+  padding: 16px 24px;
   border-radius: 0 0 var(--radius) var(--radius);
 }
 .countdown__days {
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   font-weight: 800;
-  color: var(--ink);
+  color: #fff;
   line-height: 1;
+}
+.countdown__label,
+.countdown__unit {
+  color: #fff;
 }
 
 /* Exoikonomo two-column sticky layout */
