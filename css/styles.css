@@ -780,6 +780,17 @@ body.menu-open::after {
 .deadline-card--green .deadline-list strong {
   color: var(--green-700);
 }
+.deadline-card--blue .btn--primary {
+  background: var(--blue);
+  border-color: var(--blue);
+}
+.deadline-card--blue .btn--primary:hover {
+  background: var(--blue-700);
+  border-color: var(--blue-700);
+}
+.deadline-card--blue .cta-block__countdown {
+  background: var(--blue);
+}
 .deadline-card__columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0,1fr));
