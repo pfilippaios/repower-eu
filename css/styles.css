@@ -1017,6 +1017,7 @@ body.menu-open::after {
   padding: 16px 20px;
   display: flex;
   align-items: baseline;
+  justify-content: center;
   gap: 8px;
   color: #fff;
   font-size: 1rem;
