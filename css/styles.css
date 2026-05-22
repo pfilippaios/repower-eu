@@ -1392,6 +1392,7 @@ body.menu-open::after {
   .deadline-grid { grid-template-columns: 1fr; }
   .deadlines-overview__programmes { grid-template-columns: 1fr; }
   .deadline-card__columns { grid-template-columns: 1fr; }
+  .deadlines-overview .deadline-card__cta { width: 100%; text-align: center; }
 
   .deadline-banner {
     flex-direction: column;
